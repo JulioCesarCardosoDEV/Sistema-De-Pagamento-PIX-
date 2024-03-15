@@ -9,7 +9,7 @@ import jakarta.validation.constraints.Size;
 public record UserRequest(
         @NotNull(message = "O nome não pode ser nulo")
         @NotBlank(message = "O nome não pode ser vazio")
-        @Size(min = 1, message = "O nome deve conter no minimo 2 letras")
+        @Size(min = 1, message = "O nome deve conter no mínimo 2 letras")
         String name,
 
         @NotNull(message = "Email não pode ser nulo")
@@ -19,10 +19,11 @@ public record UserRequest(
         
         @NotNull(message = "A senha não pode ser nula")
         @NotBlank(message = "A senha não pode ser vazia")
-        @Size(min = 8, message = "A senha deve conter no minímo 8 caracteres")
+        @Size(min = 8, message = "A senha deve conter no mínimo 8 caracteres")
         String password) {
 
     public User toModel(){
+
         return new User(name, email, password);
     }
 
