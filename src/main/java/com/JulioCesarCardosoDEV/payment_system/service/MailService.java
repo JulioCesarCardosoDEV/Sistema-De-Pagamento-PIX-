@@ -22,7 +22,7 @@ public class MailService {
     public void sendVerificaionEmail(User user) throws MessagingException, UnsupportedEncodingException {
         String toAddres = user.getEmail();
         String fromAddres = "juliocccc549@gmail.com";
-        String senderName = "Livros company";
+        String senderName = "LivrosCompany";
         String subject = "Verifique a sua conta";
         String content = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional //EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n" +
                 "<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\">\n" +
